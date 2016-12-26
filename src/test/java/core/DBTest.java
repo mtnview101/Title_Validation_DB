@@ -5,13 +5,14 @@ import static org.hamcrest.Matchers.*;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.testng.annotations.*;
 import net.sf.testng.databinding.*;
 
 public class DBTest {
        WebDriver driver;
        @BeforeClass
-       public void browserOpen() throws InterruptedException {driver = new FirefoxDriver();System.out.println("open browser");}
+       public void browserOpen() throws InterruptedException {driver = new HtmlUnitDriver();System.out.println("open browser");}
        
        @AfterClass
        public void browserQuit() throws InterruptedException {driver.quit();}

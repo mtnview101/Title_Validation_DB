@@ -9,7 +9,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.testng.annotations.*;
 import net.sf.testng.databinding.*;
 
-public class DBTest {
+public class DBTest1 {
        WebDriver driver;
        @BeforeClass
        public void browserOpen() throws InterruptedException {driver = new HtmlUnitDriver();System.out.println("open browser");}
@@ -26,3 +26,4 @@ public class DBTest {
               String title_actual = driver.getTitle();
 assertThat(title_actual, is(title_expected));}
 }
+
